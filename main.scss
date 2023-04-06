@@ -1,0 +1,18 @@
+@import "./UIpartions/container";
+@import "./UIpartions/defaultTagStyles";
+@import "./UIpartions/variables";
+
+@function calculate-rem($size) {
+  $rem-size: $size / 16px;
+  @return #{$rem-size}rem;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: $black;
+  color: $white;
+  font-size: calculate-rem(18px);
+  line-height: calculate-rem(28px);
+}
+
+
